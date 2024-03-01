@@ -14,7 +14,6 @@ class ZapatoPage extends StatelessWidget {
       children: [
         CustomAppBar(texto: 'For You',),
         ZapatoPreview(),
-
       ],
      ),
     );
