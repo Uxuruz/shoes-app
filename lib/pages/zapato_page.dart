@@ -9,6 +9,14 @@ class ZapatoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return  Scaffold(
      // body: CustomAppBar(texto: 'For You',)
+     //body: ZapatoPreview(),
+     body: Column(
+      children: [
+        CustomAppBar(texto: 'For You',),
+        ZapatoPreview(),
+
+      ],
+     ),
     );
   }
 }
