@@ -1,16 +1,31 @@
 import 'package:flutter/material.dart';
 
 class CustomAppBar extends StatelessWidget {
-   CustomAppBar();
+  final String texto;
+
+   CustomAppBar({
+    required this.texto
+   });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      height: 150,
-      color: Colors.red,
-      child: Row(
-        children: [],
+    return SafeArea(
+      top: true,
+      bottom: false,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 30),
+        child: Container(
+          margin: const EdgeInsets.only(top: 30), /*Agrega mas espacio a vertical al titulo del appbar*/
+          width: double.infinity,
+          child:  Row (
+            children:[
+              Text(texto ,style: const TextStyle(fontSize: 23, fontWeight: FontWeight.w700),
+              ),
+              Spacer(),
+              Icon(Icons.search, size: 23,)
+            ],
+          ),
+        ),
       ),
     );
   }
