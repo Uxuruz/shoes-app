@@ -8,7 +8,7 @@ class ZapatoPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: CustomAppBar(texto: 'For You',)
+     // body: CustomAppBar(texto: 'For You',)
     );
   }
 }
