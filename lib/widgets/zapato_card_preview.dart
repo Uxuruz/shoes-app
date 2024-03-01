@@ -27,13 +27,27 @@ class _ZapatoConSombra extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
+    return Padding (
       padding: const EdgeInsets.all(55),
       child: Stack(
         children: [
-          Image(image: AssetImage('assets/imgs/azul.png'))
+          _ZapatoSombra(),
+         const  Image(image: AssetImage('assets/imgs/azul.png'))
         ],
       ),
+    );
+  }
+}
+
+class _ZapatoSombra extends StatelessWidget {
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 170,
+      height: 70,
+      color: Colors.red,
     );
   }
 }
