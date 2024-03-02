@@ -13,7 +13,6 @@ class ZapatoPage extends StatelessWidget {
      body: Column(
       children: [
         CustomAppBar(texto: 'For You',),
-     
         Expanded (
           child: SingleChildScrollView(
             physics: const BouncingScrollPhysics(),
@@ -28,8 +27,8 @@ class ZapatoPage extends StatelessWidget {
            ),  
           )
           ),
-        AgregarProductoCarrito(monto: 180.0),
-        SizedBox(height: 5,)
+        const AgregarProductoCarrito(monto: 180.0),
+        const SizedBox(height: 5,)
       ],
      ),
     );
